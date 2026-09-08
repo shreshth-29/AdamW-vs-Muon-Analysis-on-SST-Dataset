@@ -2,7 +2,7 @@
 
 DAPLab recruitment task (post-training optimization). Fine-tuning a small LM on SST-2 with AdamW and with Muon, and diagnosing how the two optimizers differ — not just in accuracy, but in the trajectory they take and the solution they land in.
 
-**Report:** [`report.pdf`](report.pdf) (one page: setup, metrics, results table, and answers to the four task questions).
+**Report:** [`AdamW_vs_Muon_report.pdf`](AdamW_vs_Muon_report.pdf) (one page: setup, metrics, results table, and answers to the four task questions).
 
 
 ## Files
