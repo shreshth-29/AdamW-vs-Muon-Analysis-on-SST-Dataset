@@ -7,7 +7,7 @@ DAPLab recruitment task (post-training optimization). Fine-tuning a small LM on 
 
 ## Files
 
-- `train_multi_config.ipynb` — config-driven training. Each entry in `configs` is one run; saves `ckpt/<run>/logs.json` and weights at steps 0, 500, 501 and the end.
+- `train_multi_config.ipynb` — config-driven training. Each entry in `configs` is one run; saves `ckpt/<run>/logs.json` and weights at various steps.
 - `final_analysis.ipynb` — computes the metrics from the checkpoints, caches them in `stats.json`, and makes the report figure and tables.
 - `AdamW_vs_Muon_report.pdf` — the write-up.
 
@@ -18,7 +18,7 @@ DAPLab recruitment task (post-training optimization). Fine-tuning a small LM on 
 pip install torch>=2.9 transformers datasets matplotlib tqdm
 ```
 
-Run all cells of `train.ipynb` (it skips any run whose `logs.json` already exists), then `analysis.ipynb`. Works on CUDA or Apple MPS; the results in the report were produced on an MPS Device (locally trained on M5 MacBook).
+Run all cells of `train_multi_config.ipynb` (it skips any run whose `logs.json` already exists), then `final_analysis.ipynb`. Works on both CUDA or Apple MPS device. The results in the report were produced on an MPS Device (local training on M5 MacBook).
 
 
 
