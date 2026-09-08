@@ -8,8 +8,8 @@ DAPLab recruitment task (post-training optimization). Fine-tuning a small LM on 
 ## Files
 
 - `train_multi_config.ipynb` — config-driven training. Each entry in `configs` is one run; saves `ckpt/<run>/logs.json` and weights at steps 0, 500, 501 and the end.
-- `analysis.ipynb` — computes the metrics from the checkpoints, caches them in `stats.json`, and makes the report figure and tables.
-- `report.pdf` — the write-up.
+- `final_analysis.ipynb` — computes the metrics from the checkpoints, caches them in `stats.json`, and makes the report figure and tables.
+- `AdamW_vs_Muon_report.pdf` — the write-up.
 
 
 ## Running
